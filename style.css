@@ -1,1 +1,221 @@
+body {
+font-family: Arial, sans-serif;
+background-color: var(--bg-color);
+color: var(--text-color);
+margin: 0;
+padding: 0;
+}
 
+.container {
+width: 80%;
+max-width: 600px;
+margin: 40px auto;
+background: var(--container-bg);
+padding: 24px;
+border-radius: 10px;
+box-shadow: 0 0 10px var(--shadow-color);
+}
+
+h1 {
+margin-top: 0;
+color: var(--heading-color);
+}
+
+.subtitle {
+color: var(--subtitle-color);
+margin-bottom: 20px;
+}
+
+label {
+display: block;
+margin-top: 12px;
+margin-bottom: 6px;
+font-weight: bold;
+color: var(--label-color);
+}
+
+input {
+width: 100%;
+padding: 10px;
+box-sizing: border-box;
+margin-bottom: 10px;
+background-color: var(--input-bg);
+color: var(--input-text);
+border: 1px solid var(--input-border);
+border-radius: 4px;
+}
+
+button {
+margin-top: 10px;
+padding: 10px 16px;
+border: none;
+background-color: var(--button-bg);
+color: var(--button-text);
+border-radius: 6px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: var(--button-hover);
+}
+
+.table-container {
+margin-top: 20px;
+overflow-x: auto;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+background: var(--container-bg);
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 0 10px var(--shadow-color);
+}
+
+th, td {
+padding: 12px;
+text-align: left;
+border-bottom: 1px solid var(--input-border);
+}
+
+th {
+background-color: var(--button-bg);
+color: var(--button-text);
+font-weight: bold;
+}
+
+td {
+color: var(--note-text);
+}
+
+tr:nth-child(even) {
+background-color: var(--note-bg);
+}
+
+tr:hover {
+background-color: var(--list-bg);
+}
+
+img {
+border-radius: 4px;
+object-fit: cover;
+}
+
+.delete-btn {
+background-color: #e74c3c;
+color: white;
+border: none;
+padding: 6px 12px;
+border-radius: 4px;
+cursor: pointer;
+font-size: 12px;
+}
+
+.delete-btn:hover {
+background-color: #c0392b;
+}
+
+input[type="color"] {
+width: 60px;
+height: 40px;
+cursor: pointer;
+}
+
+/* Theme selector */
+.theme-selector {
+margin-bottom: 20px;
+text-align: center;
+}
+
+.theme-selector label {
+display: inline-block;
+margin: 0 10px;
+}
+
+.theme-selector select {
+padding: 8px;
+border-radius: 4px;
+border: 1px solid var(--input-border);
+background-color: var(--input-bg);
+color: var(--input-text);
+}
+
+#custom-theme-controls {
+text-align: center;
+}
+
+#custom-theme-controls label {
+display: inline-block;
+margin: 0 5px 10px 10px;
+font-size: 14px;
+}
+
+#custom-theme-controls input[type="color"] {
+width: 40px;
+height: 30px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+margin-left: 5px;
+}
+
+/* Light theme (default) */
+:root {
+--bg-color: #f4f6f8;
+--text-color: #333;
+--container-bg: white;
+--shadow-color: rgba(0, 0, 0, 0.08);
+--heading-color: #333;
+--subtitle-color: #666;
+--label-color: #333;
+--input-bg: white;
+--input-text: #333;
+--input-border: #ddd;
+--button-bg: #2d6cdf;
+--button-text: white;
+--button-hover: #1f57b8;
+--list-bg: #fafafa;
+--note-bg: #f9f9f9;
+--note-text: #333;
+}
+
+/* Dark theme */
+body.dark-theme {
+--bg-color: #1a1a1a;
+--text-color: #e0e0e0;
+--container-bg: #2d2d2d;
+--shadow-color: rgba(0, 0, 0, 0.3);
+--heading-color: #e0e0e0;
+--subtitle-color: #b0b0b0;
+--label-color: #e0e0e0;
+--input-bg: #3d3d3d;
+--input-text: #e0e0e0;
+--input-border: #555;
+--button-bg: #4a90e2;
+--button-text: white;
+--button-hover: #357abd;
+--list-bg: #333;
+--note-bg: #404040;
+--note-text: #e0e0e0;
+}
+
+/* Custom theme (dynamically set via JavaScript) */
+body.custom-theme {
+--bg-color: var(--custom-bg-color, #f4f6f8);
+--text-color: var(--custom-text-color, #333);
+--container-bg: white;
+--shadow-color: rgba(0, 0, 0, 0.08);
+--heading-color: var(--custom-primary-color, #2d6cdf);
+--subtitle-color: #666;
+--label-color: var(--custom-text-color, #333);
+--input-bg: white;
+--input-text: var(--custom-text-color, #333);
+--input-border: #ddd;
+--button-bg: var(--custom-primary-color, #2d6cdf);
+--button-text: white;
+--button-hover: var(--custom-primary-hover, #1f57b8);
+--list-bg: #fafafa;
+--note-bg: #f9f9f9;
+--note-text: var(--custom-text-color, #333);
+}

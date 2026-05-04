@@ -1,1 +1,16 @@
-
+[
+    {
+        "name": "God Of War",
+        "genre": "Action-Adventure",
+        "platforms": "PS4, PC",
+        "release_year": "2026",
+        "picture": "69e66a787711a.webp"
+    },
+    {
+        "name": "Mario Kart",
+        "genre": "Racing",
+        "platforms": "Wii, PC",
+        "release_year": "2007",
+        "picture": ""
+    }
+]
