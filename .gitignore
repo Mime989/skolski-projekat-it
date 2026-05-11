@@ -1,0 +1,8 @@
+# User data and uploads
+data.json
+uploads/
+
+# Common files to ignore
+*.log
+.DS_Store
+Thumbs.db
